@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Efficient Televisions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="home-link">
+                <img src="PowerIcon.png" alt="Power Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="televisions.html" class="nav-link">Televisions</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Appliance Energy Consumption</h1>
+    <div id="content"></div>
+    <!-- Give the SVG a size so shapes can be seen -->
+    <svg width="300" height="150"></svg>
+    <!-- Load D3 first, then your D3 code file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
+
+    <main>
+        <section class="content-section">
+            <div class="hero">
+                <h1>Energy Efficient Televisions</h1>
+                <p>Discover energy-efficient televisions for the Australian market</p>
+            </div>
+
+            <div class="content">
+                <h2>Why Energy Efficiency Matters</h2>
+                <p>Televisions account for approximately 8% of an average Australian household's energy consumption. Choosing an energy-efficient model can significantly reduce your electricity bills and environmental impact.</p>
+                
+                <div class="info-box">
+                    <h3>Did You Know?</h3>
+                    <p>An energy-efficient TV can save you up to $50 per year on electricity costs compared to a standard model.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2025</span> EcoPower. All rights reserved.</p>
+        <p>Created by Alvin Tan Yi Tung</p>
+        <p class="ai-disclosure">This website was created with assistance from Generative AI tools.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
