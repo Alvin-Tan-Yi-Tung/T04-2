@@ -176,3 +176,9 @@ footer p {
     opacity: 0.8;
     margin-top: 15px;
 }
+
+.responsive-svg-container {
+    margin: 0 auto; /* center */
+    width: 100%; /* fill parent width */
+    max-width: 1200px; /* cap max width */
+}
