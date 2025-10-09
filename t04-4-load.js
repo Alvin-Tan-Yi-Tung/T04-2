@@ -4,13 +4,21 @@ const createBarChart = (data) => {
         .append("svg")
             .attr("viewBox", "0 0 1200 400")
             .style("border", "1px solid black");
+
+    const leftMargin = 24;         // leave room for labels later
+    const barHeight = 20;          // height of each bar
+    const barGap = 6;              // vertical gap between bars
+
     svg
         .selectAll("rect")
         .data(data)
         .join("rect")
             .attr("class", d => `bar bar-${d.count}`)
+            .attr("x", leftMargin) // same x for all bars (left-aligned)
+            .attr("y", (d, i) => i * (barHeight + barGap) + 20) // space by index
             .attr("width", d => d.count) // uses your numeric column directly
-            .attr("height", 16); // constant bar height
+            .attr("height", barHeight)
+            .attr("fill", "#69b3a2"); // visible color for now
 };
 
 /* Load CSV, Convert Type, Quick Check */
